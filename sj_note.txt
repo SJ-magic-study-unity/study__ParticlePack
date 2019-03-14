@@ -1,0 +1,34 @@
+/************************************************************
+unity particle pack
+************************************************************/
+■version
+	Unity 2018.2.5 or higher
+	
+
+■注意
+Asset storeから直接 downloadすると、自分のprojectが壊れて(ごちゃごちゃになって)しまうので、注意。
+一度、新規Projectにdownloadし、必要なものをExportして使用する。
+
+1. Open the asset in a NEW project
+2. Run it and choose which effect/s do you want to import in your project
+3. Follow the instructions(Readme) carefully to understand how to export only the effect/s that you want (remember to download all dependencies related to the effect/s that you want to export, via the checkbox in the menu)
+4. Import the exported package, following carefully the instructions
+5. !ENJOY!
+
+
+具体的には、以下のようにしてpackageを作成した
+ParticlePack	(自分で追加)
+	EffectExamples	(copy)
+	Shared			(copy)
+	sj_script		(自分で追加)
+		ParticlePack_AutoDestroyEffect
+
+
+■基本
+EffectExamples の下にあるprefabを置く.
+
+
+■tips (FlameThrowerを例に)
+-	Duration, Loopingを設定 : FlameThrower/ FireEmbers ... Smoke was set to off at default.
+-	attach ParticlePack_AutoDestroyEffect.cs(sj自作) to FireEmbers
+
